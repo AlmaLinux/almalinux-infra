@@ -1,0 +1,8 @@
+.idea
+**/backend*.cfg
+**/inventory-*.yml
+**/.terraform*
+*.tfstate
+*.tfstate.*
+*.tfvars
+
