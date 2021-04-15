@@ -10,5 +10,5 @@ output "tf_state_bucket_arn" {
 
 output "arm64-builder01_ip" {
   description = "arm64-builder01.almalinux.org build node IP address"
-  value       = metal_device.arm64-builder01.network.0
+  value       = metal_device.arm64-builder01.network.0.address
 }
