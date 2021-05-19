@@ -34,3 +34,25 @@ resource "metal_device" "arm64-builder01" {
   project_id              = local.tf_secrets["equinix_project_id"]
   metro                   = local.tf_secrets["equinix_arm64_builder01_metro"]
 }
+
+resource "metal_device" "arm64-builder02" {
+  hostname                = "arm64-builder02.almalinux.org"
+  plan                    = "c2.large.arm"
+  hardware_reservation_id = local.tf_secrets["equinix_arm64_builder02_reservation_id"]
+  // TODO: change to AlmaLinux 8 when it is ready
+  operating_system        = "centos_8"
+  billing_cycle           = "hourly"
+  project_id              = local.tf_secrets["equinix_project_id"]
+  metro                   = local.tf_secrets["equinix_arm64_builder02_metro"]
+}
+
+resource "metal_device" "arm64-builder03" {
+  hostname                = "arm64-builder03.almalinux.org"
+  plan                    = "c2.large.arm"
+  hardware_reservation_id = local.tf_secrets["equinix_arm64_builder03_reservation_id"]
+  // TODO: change to AlmaLinux 8 when it is ready
+  operating_system        = "centos_8"
+  billing_cycle           = "hourly"
+  project_id              = local.tf_secrets["equinix_project_id"]
+  metro                   = local.tf_secrets["equinix_arm64_builder03_metro"]
+}

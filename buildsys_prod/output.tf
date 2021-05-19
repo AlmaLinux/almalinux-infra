@@ -12,3 +12,13 @@ output "arm64-builder01_ip" {
   description = "arm64-builder01.almalinux.org build node IP address"
   value       = metal_device.arm64-builder01.network.0.address
 }
+
+output "arm64-builder02_ip" {
+  description = "arm64-builder02.almalinux.org build node IP address"
+  value       = metal_device.arm64-builder02.network.0.address
+}
+
+output "arm64-builder03_ip" {
+  description = "arm64-builder03.almalinux.org build node IP address"
+  value       = metal_device.arm64-builder03.network.0.address
+}
